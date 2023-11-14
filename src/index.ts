@@ -1,5 +1,6 @@
 import Fishbone from './Fishbone';
 
+// export * from './Fishbone.types';
 export { 
     FishboneNode,
     FishboneProps 

@@ -10,6 +10,7 @@ export type FishboneNode = {
 export type LineConfig = {
     color: string;
     strokeWidthPx: number;
+    // transform: => ()
 };
 
 export type NodeConfig = {
@@ -20,7 +21,7 @@ export type NodeConfig = {
 export type FishboneProps = {
     width?: string | number;
     height?: string | number;
-    items?: FishboneNode;
+    items?: FishboneNode | any;
     linesConfig?: NotEmptyReadonlyArray<LineConfig>;
     nodesConfig?: NotEmptyReadonlyArray<NodeConfig>;
     wrapperStyle?: React.CSSProperties;
