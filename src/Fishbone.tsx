@@ -386,7 +386,6 @@ const Fishbone = (props: FishboneProps) => {
                     .id((d: any) => d.id)
                     .links(links)
                     .distance((d: any) => calculateLinkDistance(d))
-                // (d: any) => (d.target.maxChildIdx + 1) * linkScale(d.depth + 1)
             )
             .force("charge", d3.forceManyBody().strength(-10)); // Adjust strength as needed to prevent text collision;
 
